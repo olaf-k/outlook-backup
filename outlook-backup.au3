@@ -7,10 +7,10 @@ Opt("WinTitleMatchMode", 3)
 
 If _Singleton("outlook-backup", 1) = 0 Then Exit
 
-;~ Customize those
+;~ Edit this
 Local $AccountName   = "enter@yourmail.here"
-Local $BackupPath    = "C:\enter@yourmail.pst"
-;~ And verify this
+;~ And verify these
+Local $BackupPath    = "C:\Backup\" & $AccountName & ".pst"
 Local $OutlookPath   = "C:\Program Files (x86)\Microsoft Office\root\Office16\OUTLOOK.EXE"
 ;~ But don't touch these (probably)
 Local $WinOutlook    = "[CLASS:rctrl_renwnd32]"
